@@ -148,7 +148,7 @@ void ParallelPearsonCC () {
     }
     #pragma omp parallel sections num_threads(2){
 
-	#pragma omp section{
+    #pragma omp section{
     Stan_Dev_a= sqrt(Stan_Dev_a_sum/Total_Len);
     }
     #pragma omp section{
